@@ -1,3 +1,11 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1F3A2B">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="Чистка спины для мужчин в Ташкенте. 800 000 сум вместо 1 200 000, оплата после процедуры. Не понравится — не платите.">
 <title>Eco Чистка спины для мужчин</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -303,7 +311,60 @@ footer .mark{color:var(--on-green);width:40px;height:40px}
 @media (min-width:880px){.steps4{grid-template-columns:repeat(4,1fr)}}
 .reveal{animation:rise .7s ease both}
 @keyframes rise{from{transform:translateY(12px)}to{transform:none}}
+
+/* ===== mobile polish ===== */
+html,body{overflow-x:clip}
+body{-webkit-tap-highlight-color:transparent;text-rendering:optimizeLegibility}
+img,svg,iframe{max-width:100%}
+.wrap{padding-left:max(16px,env(safe-area-inset-left));padding-right:max(16px,env(safe-area-inset-right))}
+.video iframe{height:auto;aspect-ratio:9/16;max-height:80vh}
+.btn,.top-cta,.tgo,summary,.chip span{touch-action:manipulation}
+.chip span{min-height:44px;display:flex;align-items:center}
+summary{min-height:48px}
+.tx{min-width:44px;min-height:44px}
+@media (max-width:420px){
+  section{padding-block:30px}
+  .sec-head h2{font-size:clamp(30px,9vw,40px)}
+  .hero h1{font-size:clamp(34px,10.5vw,46px)}
+  .hero .sub{font-size:16px}
+  .offer{padding:16px;border-radius:16px}
+  .price b{font-size:clamp(30px,9vw,38px)}
+  .price s{font-size:15px}
+  .offer-row{gap:4px 12px}
+  .offer-row .v{text-align:right}
+  .timer b{font-size:24px}
+  .pain{padding:14px 0}
+  .pain p{font-size:14.5px}
+  .res p,.s4 p{font-size:13px}
+  .s4 h3{font-size:20px}
+  .trust b{font-size:20px}
+  .trust span{font-size:12.5px}
+  .rcard{width:250px}
+  .rcard.req p{font-size:19px}
+  .guar h2{font-size:clamp(32px,10vw,44px)}
+  .seal{width:108px;height:108px}.seal .mark{width:44px;height:44px}
+  .final h2{font-size:clamp(32px,10vw,44px)}
+  .final{border-radius:20px 20px 0 0}
+  .bar .meta b{font-size:20px}
+  .toast{grid-template-columns:auto 1fr auto;gap:8px}
+  .toast .tx{grid-column:3;grid-row:1}
+  .toast .tgo{grid-column:1/-1;text-align:center}
+}
+@media (max-width:350px){
+  .wrap{padding-left:12px;padding-right:12px}
+  .brand small{display:none}
+  .brand b{font-size:12.5px;letter-spacing:.1em}
+  .top-cta{padding:7px 11px;font-size:12px}
+  .res,.trust{grid-template-columns:1fr}
+  .steps4{gap:8px}.s4{padding:10px}
+  .price{grid-template-columns:1fr;gap:6px}
+  .price>div{grid-template-rows:auto}
+  .bar .in{gap:8px}.bar .meta{font-size:11px}
+  .chips{gap:6px}.chip span{padding:8px 11px;font-size:13px}
+}
 </style>
+</head>
+<body>
 
 <!-- SVG sprite: back silhouette reused in every step -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -721,3 +782,5 @@ $("#d-copy").addEventListener("click", async () => {
   catch(e) { const r = document.createRange(); r.selectNodeContents($("#d-msg")); const s = getSelection(); s.removeAllRanges(); s.addRange(r); b.textContent = "Текст выделен, скопируйте"; }
 });
 </script>
+</body>
+</html>
